@@ -1,0 +1,9 @@
+#!/bin/bash
+
+CASSANDRA_HOME=<%= @options[:home] %>
+CASSANDRA_USER=<%= @options[:user] %>
+
+ulimit -n 65535
+
+exec chpst -u${CASSANDRA_USER} -e ${CASSANDRA_HOME}/env -o 65535 \
+ ${CASSANDRA_HOME}/bin/dse cassandra -f

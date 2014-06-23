@@ -1,0 +1,22 @@
+.vagrant
+*~
+*#
+.#*
+\#*#
+.*.sw[a-z]
+*.un~
+/cookbooks
+
+# Bundler
+bin/*
+.bundle/*
+
+.librarian
+tmp/
+
+.kitchen/
+.kitchen.local.yml
+
+Cheffile.lock
+Gemfile.lock
+env.sh
